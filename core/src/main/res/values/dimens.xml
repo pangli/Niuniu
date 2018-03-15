@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recommend_banner_item_width">528dp</dimen>
+    <dimen name="recommend_banner_item_height">260dp</dimen>
+    <dimen name="recommend_banner_item_padding">5dp</dimen>
+    <dimen name="toolbarTitleTextSize">21sp</dimen>
+    <dimen name="toolbarHeight">72dp</dimen>
+    <dimen name="dividerLineHeight">1dp</dimen>
+</resources>

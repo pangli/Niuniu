@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="PTRecyclerView">
+        <attr name="span_count" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="Progress">
+        <attr name="max" format="integer|reference"/>
+        <attr name="progress" format="integer|reference"/>
+        <attr name="line_color" format="color|reference"/>
+        <attr name="line_width" format="float|reference"/>
+        <attr name="circle_color_out" format="color|reference"/>
+        <attr name="circle_color_center" format="color|reference"/>
+        <attr name="circle_color_in" format="color|reference"/>
+        <attr name="circle_radius" format="float|reference"/>
+
+        <attr name="line_segment">
+            <flag name="left" value="1"/>
+            <flag name="top" value="100"/>
+            <flag name="right" value="1000"/>
+            <flag name="bottom" value="10000"/>
+        </attr>
+
+        <attr name="orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+    <!--状态轴-->
+    <declare-styleable name="StatusView">
+        <attr name="drawable" format="reference"/>
+        <attr name="sv_line_color" format="color|reference"/>
+        <attr name="sv_line_width" format="float|reference"/>
+        <attr name="sv_line_segment">
+            <flag name="top" value="1"/>
+            <flag name="bottom" value="2"/>
+        </attr>
+    </declare-styleable>
+    <!--显示更多的textview-->
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="rtv_MaxLinesOnShrink" format="reference|integer"/>
+        <attr name="rtv_EllipsisHint" format="reference|string"/><!--default is ..-->
+        <attr name="rtv_ToExpandHint" format="reference|string"/><!--"to expand" hint string, default is "Expand"-->
+        <attr name="rtv_ToShrinkHint" format="reference|string"/><!--"to shrink" hint string, default is "Shrink"-->
+        <attr name="rtv_GapToExpandHint" format="reference|string"/><!--gap between "toExpandHint" and "trimmed text"-->
+        <attr name="rtv_GapToShrinkHint" format="reference|string"/><!--gap between "toShrinkHint" and "trimmed text"-->
+        <attr name="rtv_EnableToggle" format="reference|boolean"/><!--if toggle the state when click ExpandTextView-->
+        <attr name="rtv_ToExpandHintShow" format="reference|boolean"/><!--if show "toExpandHint"-->
+        <attr name="etv_ToShrinkHintShow" format="reference|boolean"/><!--if show "toShrinkHint"-->
+        <attr name="rtv_ToExpandHintColor" format="reference|color"/><!--text color of "toExpandHint"-->
+        <attr name="rtv_ToShrinkHintColor" format="reference|color"/><!--text color of "toShrinkHint"-->
+        <attr name="rtv_ToExpandHintColorBgPressed" format="reference|color"/><!--background color if "toExpandHint" pressed-->
+        <attr name="rtv_ToShrinkHintColorBgPressed" format="reference|color"/><!--background color if "toShrinkHint" pressed-->
+        <attr name="rtv_InitState" format="enum"><!--init state, default is shrink-->
+            <enum name="shrink" value="0"/>
+            <enum name="expand" value="1"/>
+        </attr>
+    </declare-styleable>
+    <!--banner-->
+    <declare-styleable name="ConvenientBanner">
+        <attr name="canLoop" format="boolean"/>
+    </declare-styleable>
+</resources>
