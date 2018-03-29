@@ -45,6 +45,5 @@ dependencies {
     api rootProject.ext.recyclerViewAdapter
     api rootProject.ext.glide
     annotationProcessor rootProject.ext.glide_annotationProcessor
-
-
+    api rootProject.ext.easypermissions
 }

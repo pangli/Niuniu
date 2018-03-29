@@ -9,7 +9,7 @@ ext {
             applicationId    : "com.qianniu.niuniu"
     ]
     //support
-    support_version = '27.0.2'
+    support_version = '27.1.0'
     support_v4 = "com.android.support:support-v4:$support_version"
     appcompat_v7 = "com.android.support:appcompat-v7:$support_version"
     support_design = "com.android.support:design:$support_version"
@@ -81,5 +81,7 @@ ext {
     recyclerViewAdapter = [
             "com.github.CymChad:BaseRecyclerViewAdapterHelper:$recyclerViewAdapter_versio"
     ]
-
+    //权限管理
+    easypermissions_versio = '1.2.0'
+    easypermissions = "pub.devrel:easypermissions:$easypermissions_versio"
 }
