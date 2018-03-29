@@ -1,6 +1,7 @@
 package com.zorro.core.activity;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 
 import com.zorro.core.R;
@@ -8,14 +9,17 @@ import com.zorro.core.bus.MsgEvent;
 import com.zorro.core.bus.RxBus;
 import com.zorro.core.widget.Toasts;
 
+import java.util.List;
+
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
+import pub.devrel.easypermissions.EasyPermissions;
 
 /**
  * Created by pangli on 2018/3/14 16:31
  * 备注：  activity基类
  */
-public class GlobalStateActivity extends AppCompatActivity {
+public class GlobalStateActivity extends AppCompatActivity implements EasyPermissions.PermissionCallbacks {
 
     private Disposable disposable;
     private Toasts toasts;
@@ -68,5 +72,24 @@ public class GlobalStateActivity extends AppCompatActivity {
         if (disposable != null && disposable.isDisposed()) {
             disposable.dispose();
         }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[]
+            grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
+    }
+
+    //申请成功时调用
+    @Override
+    public void onPermissionsGranted(int requestCode, @NonNull List<String> perms) {
+
+    }
+
+    //申请失败时调用
+    @Override
+    public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
+
     }
 }
