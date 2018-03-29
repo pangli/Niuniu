@@ -22,6 +22,11 @@ ext {
             recyclerview,
             cardview
     ]
+    //log
+    logger_versio = '2.2.0'
+    logger_util = [
+            "com.orhanobut:logger:$logger_versio"
+    ]
     //glide 图片加载
     glide_versio = '4.6.1'
     glide = [
@@ -37,6 +42,9 @@ ext {
             "com.squareup.retrofit2:converter-gson:$retrofit_versio",
             "com.squareup.retrofit2:adapter-rxjava2:$retrofit_versio"
     ]
+    //gson
+    gson_versio = '2.8.2'
+    gson = "com.google.code.gson:gson:$gson_versio"
     //rxjava
     rxjava_versio = '2.1.10'
     rxjava = "io.reactivex.rxjava2:rxjava:$rxjava_versio"
@@ -62,4 +70,15 @@ ext {
     rxeasyhttp = [
             "com.zhouyou:rxeasyhttp:$rxeasyhttp_versio"
     ]
+    //下拉刷新上啦加载更多
+    smartRefreshLayout_versio = '1.1.0-alpha-2'
+    smartRefreshLayout = [
+            "com.scwang.smartrefresh:SmartRefreshLayout:$smartRefreshLayout_versio"
+    ]
+    //recyclerViewAdapter工具
+    recyclerViewAdapter_versio = '2.9.36'
+    recyclerViewAdapter = [
+            "com.github.CymChad:BaseRecyclerViewAdapterHelper:$recyclerViewAdapter_versio"
+    ]
+
 }

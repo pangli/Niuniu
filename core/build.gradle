@@ -27,18 +27,24 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation rootProject.ext.support
-    implementation rootProject.ext.glide
-    annotationProcessor rootProject.ext.glide_annotationProcessor
-    implementation rootProject.ext.retrofit
-    implementation rootProject.ext.rxjava
-    implementation rootProject.ext.rxandroid
-    implementation rootProject.ext.butterknife
-    annotationProcessor rootProject.ext.butterknife_compilerannotationProcessor
-    implementation rootProject.ext.okhttp_logging_interceptor
-    implementation rootProject.ext.rxeasyhttp
-
+    api rootProject.ext.support
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    ///////////////////-------------------------/////////////////
+    api rootProject.ext.logger_util
+    api rootProject.ext.retrofit
+    api rootProject.ext.rxjava
+    api rootProject.ext.rxandroid
+    api rootProject.ext.butterknife
+    annotationProcessor rootProject.ext.butterknife_compilerannotationProcessor
+    api rootProject.ext.okhttp_logging_interceptor
+    api rootProject.ext.gson
+    api rootProject.ext.rxeasyhttp
+    api rootProject.ext.smartRefreshLayout
+    api rootProject.ext.recyclerViewAdapter
+    api rootProject.ext.glide
+    annotationProcessor rootProject.ext.glide_annotationProcessor
+
+
 }
