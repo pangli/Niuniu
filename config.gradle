@@ -9,7 +9,7 @@ ext {
             applicationId    : "com.qianniu.niuniu"
     ]
     //support
-    support_version = '27.0.2'
+    support_version = '27.1.0'
     support_v4 = "com.android.support:support-v4:$support_version"
     appcompat_v7 = "com.android.support:appcompat-v7:$support_version"
     support_design = "com.android.support:design:$support_version"
@@ -21,6 +21,11 @@ ext {
             support_design,
             recyclerview,
             cardview
+    ]
+    //log
+    logger_versio = '2.2.0'
+    logger_util = [
+            "com.orhanobut:logger:$logger_versio"
     ]
     //glide 图片加载
     glide_versio = '4.6.1'
@@ -37,6 +42,9 @@ ext {
             "com.squareup.retrofit2:converter-gson:$retrofit_versio",
             "com.squareup.retrofit2:adapter-rxjava2:$retrofit_versio"
     ]
+    //gson
+    gson_versio = '2.8.2'
+    gson = "com.google.code.gson:gson:$gson_versio"
     //rxjava
     rxjava_versio = '2.1.10'
     rxjava = "io.reactivex.rxjava2:rxjava:$rxjava_versio"
@@ -62,4 +70,18 @@ ext {
     rxeasyhttp = [
             "com.zhouyou:rxeasyhttp:$rxeasyhttp_versio"
     ]
+    //下拉刷新上啦加载更多
+    smartRefreshLayout_versio = '1.1.0-alpha-2'
+    smartRefreshLayout = [
+            "com.scwang.smartrefresh:SmartRefreshLayout:$smartRefreshLayout_versio",
+            "com.scwang.smartrefresh:SmartRefreshHeader:$smartRefreshLayout_versio"
+    ]
+    //recyclerViewAdapter工具
+    recyclerViewAdapter_versio = '2.9.36'
+    recyclerViewAdapter = [
+            "com.github.CymChad:BaseRecyclerViewAdapterHelper:$recyclerViewAdapter_versio"
+    ]
+    //权限管理
+    easypermissions_versio = '1.2.0'
+    easypermissions = "pub.devrel:easypermissions:$easypermissions_versio"
 }
