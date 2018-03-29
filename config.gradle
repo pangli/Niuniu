@@ -73,7 +73,8 @@ ext {
     //下拉刷新上啦加载更多
     smartRefreshLayout_versio = '1.1.0-alpha-2'
     smartRefreshLayout = [
-            "com.scwang.smartrefresh:SmartRefreshLayout:$smartRefreshLayout_versio"
+            "com.scwang.smartrefresh:SmartRefreshLayout:$smartRefreshLayout_versio",
+            "com.scwang.smartrefresh:SmartRefreshHeader:$smartRefreshLayout_versio"
     ]
     //recyclerViewAdapter工具
     recyclerViewAdapter_versio = '2.9.36'
